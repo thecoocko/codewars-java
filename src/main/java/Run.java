@@ -4,6 +4,17 @@ public class Run {
     public static void main(String[] args) {
         Kyu8 kyu8 = new Kyu8();
 
+        System.out.println("---Kata 5---");
+        System.out.println(kyu8.countingSheep(0));
+        System.out.println(kyu8.countingSheep(1));
+        System.out.println(kyu8.countingSheep(2));
+        System.out.println(kyu8.countingSheep(3));
+
+        System.out.println("---Kata 4---");
+        System.out.println(kyu8.updateLight("red"));
+        System.out.println(kyu8.updateLight("green"));
+        System.out.println(kyu8.updateLight("yellow"));
+
         System.out.println("---Kata 4---");
         System.out.println(kyu8.check(new  Object[]{66, 101}, 66));
         System.out.println(kyu8.check(new  Object[]{80, 117, 115, 104, 45, 85, 112, 115}, 45));

@@ -1,6 +1,7 @@
 package kyu8;
 
 import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class Kyu8 {
     public  boolean zeroFuel(double distanceToPump, double mpg, double fuelLeft) {
@@ -30,6 +31,23 @@ public class Kyu8 {
             }
         }
         return flag;
+    }
+    public String updateLight(String current) {
+
+        switch(current){
+            case "green":
+                return "yellow";
+            case "red":
+                return "green";
+            case "yellow":
+                return "red";
+        }
+        return current;
+    }
+    public String countingSheep(int num) {
+        String sheeps[] = new String[num+1];
+        for (int i = 1; i < num+1; i++) sheeps[i] = i+" sheep...";
+        return Arrays.stream(sheeps).filter(i->i!=null).collect(Collectors.joining());
     }
 
 }
