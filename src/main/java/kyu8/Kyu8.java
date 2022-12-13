@@ -22,4 +22,14 @@ public class Kyu8 {
         double avg = Arrays.stream(points).average().getAsDouble();
         return avg<yourPoints;
     }
+    public  boolean check(Object[] a, Object x) {
+        boolean flag = false;
+        for (Object i:a) {
+            if(i==x){
+                flag = true;
+            }
+        }
+        return flag;
+    }
+
 }
