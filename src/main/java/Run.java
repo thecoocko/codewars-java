@@ -15,13 +15,6 @@ public class Run {
         //end of test task
 
         Kyu8 kyu8 = new Kyu8();
-        Kyu7 kyu7 = new Kyu7();
-
-        System.out.println("---Kata 16---");
-        System.out.println(kyu7.number(Arrays.asList("a", "b", "c")));
-        System.out.println(kyu7.number(Arrays.asList("", "", "", "", "")));
-        System.out.println(kyu7.number(Arrays.asList()));
-
 
         System.out.println("---Kata 15---");
         System.out.println(kyu8.reverse(5));

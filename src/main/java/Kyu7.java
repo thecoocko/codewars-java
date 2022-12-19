@@ -50,10 +50,7 @@ public class Kyu7 {
         return reverse;
     }
 
-    public static int findIt(int[] a) {
 
-        return 1;
-    }
 
 
 }
