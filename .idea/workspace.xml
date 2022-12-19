@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a889289-5917-4d87-b606-9f5ea94ccd53" name="Changes" comment="countingSheep">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Kyu7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Kyu8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Kyu7Tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kyu8/Kyu8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kyu6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kyu6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Kyu7Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Kyu7Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
