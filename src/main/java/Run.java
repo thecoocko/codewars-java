@@ -1,7 +1,29 @@
-import java.util.Arrays;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.Month;
+import java.util.*;
+
 
 public class Run {
+    public static String str;
+    public static int n;
+    static final int h = 1;
+
+    public static int getN() {
+        return n;
+    }
+
     public static void main(String[] args) {
+        LocalDate d1 = LocalDate.of(2020, Month.JUNE,20);
+        LocalDate d2 = LocalDate.of(2020, Month.JUNE,21);
+        System.out.println(Duration.between(d1,d2));
+        List<Integer> list= new LinkedList<>();
+    list.add(12);
+    list.add(2);
+    list.add(6);
+    list.add(2);
+    list.remove(2);
+    System.out.println(list);
         //Test task for company
         int []nums = {1,5,8,3,2};
         int sum = 0;

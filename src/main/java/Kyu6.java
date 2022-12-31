@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class Kyu6 {
     public static int findIt(int[] a) {
@@ -20,4 +18,21 @@ public class Kyu6 {
         }
         return result;
     }
+    /* num = str(n)
+    total = sum([int(num[i]) ** (p + i) for i in range(len(num))])
+    return total / n if (total % n) == 0 else -1*/
+
+//    public static long digPow(int n, int p) {
+//        // your code
+//        return -1;
+//    }
+public boolean check(String sentence){
+    ArrayList<Boolean> result = new ArrayList<Boolean>();
+    for (char i = 'a'; i <= 'z'; ++i) {
+        result.add(sentence.toLowerCase().contains(String.valueOf(i)));
+    }
+
+    return result.stream().allMatch(i->i==true? true: false);
+}
+
 }

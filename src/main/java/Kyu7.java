@@ -50,7 +50,27 @@ public class Kyu7 {
         return reverse;
     }
 
+    public static int GetSum(int a, int b)
+    {
+        int sum = 0;
+        int start = a>b ? b :a;
+        int end = a>b ? a:b;
+        for (int i = start; i < end+1; i++) {
+            sum+=i;
+        }
+        return sum;
+    }
 
+    //hourly speed (3600 * delta_distance) / s
+    public static int gps(int s, double[] x) {
+        // your code
+        return 1;
+    }
+
+    public static boolean getXO (String str) {
+        return str.toLowerCase().replace("o","").length() ==  str.toLowerCase().replace("x", "").length();
+
+    }
 
 
 }

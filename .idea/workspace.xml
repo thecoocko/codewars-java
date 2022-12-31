@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a889289-5917-4d87-b606-9f5ea94ccd53" name="Changes" comment="countingSheep">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Kyu6Tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kyu6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kyu6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kyu7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kyu7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Run.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Kyu7Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Kyu7Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +40,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/projects/study-project",
+    "last_opened_file_path": "D:/projects/codewars-java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -49,6 +52,15 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.Kyu7Tests">
+    <configuration name="Kyu6Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codewars-java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Kyu6Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Kyu7Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars-java" />
       <option name="PACKAGE_NAME" value="" />
@@ -58,39 +70,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Kyu7highAndLow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Kyu7Tests.getXO1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars-java" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Kyu7highAndLow" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Kyu7longest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codewars-java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Kyu7longest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Kyu7longest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codewars-java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Kyu7longest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="Kyu7Tests" />
+      <option name="METHOD_NAME" value="getXO1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Kyu7Tests.getXO2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars-java" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="Kyu7Tests" />
+      <option name="METHOD_NAME" value="getXO2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Kyu7Tests.getXO3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codewars-java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Kyu7Tests" />
+      <option name="METHOD_NAME" value="getXO3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,10 +103,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Kyu7Tests" />
-        <item itemvalue="JUnit.Tests" />
-        <item itemvalue="JUnit.Kyu7longest.test" />
-        <item itemvalue="JUnit.Kyu7longest" />
-        <item itemvalue="JUnit.Kyu7highAndLow" />
+        <item itemvalue="JUnit.Kyu7Tests.getXO3" />
+        <item itemvalue="JUnit.Kyu7Tests.getXO2" />
+        <item itemvalue="JUnit.Kyu7Tests.getXO1" />
+        <item itemvalue="JUnit.Kyu6Tests" />
       </list>
     </recent_temporary>
   </component>

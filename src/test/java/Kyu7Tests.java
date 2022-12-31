@@ -68,14 +68,57 @@ public class Kyu7Tests {
     }
 
     @Test
-    public void findeOdd() {
-        assertEquals(10, Kyu6.findIt(new int[]{1,1,1,1,1,1,10,1,1,1,1}));
-//        assertEquals(5, Kyu6.findIt(new int[]{20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5}));
-//        assertEquals(-1, Kyu6.findIt(new int[]{1,1,2,-2,5,2,4,4,-1,-2,5}));
-//        assertEquals(5, Kyu6.findIt(new int[]{20,1,1,2,2,3,3,5,5,4,20,4,5}));
-//        assertEquals(10, Kyu6.findIt(new int[]{10}));
-//        assertEquals(1, Kyu6.findIt(new int[]{5,4,3,2,1,5,4,3,2,10,10}));
+    public void getSum()
+    {
+        assertEquals(-1, Kyu7.GetSum(0, -1));
+        assertEquals(1, Kyu7.GetSum(0, 1));
     }
 
+    private static void testing(long actual, long expected) {
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void gpsSpeed() {
+        System.out.println("Fixed Tests: gps");
+        testing(Kyu7.gps(20, new double[] {0.0, 0.23, 0.46, 0.69, 0.92, 1.15, 1.38, 1.61}), 41);
+        testing(Kyu7.gps(12, new double[] {0.0, 0.11, 0.22, 0.33, 0.44, 0.65, 1.08, 1.26, 1.68, 1.89, 2.1, 2.31, 2.52, 3.25}), 219);
+        testing(Kyu7.gps(20, new double[] {0.0, 0.18, 0.36, 0.54, 0.72, 1.05, 1.26, 1.47, 1.92, 2.16, 2.4, 2.64, 2.88, 3.12, 3.36, 3.6, 3.84}), 80);
+    }
+
+    @Test
+    public void getXO1() {
+        assertEquals(true, Kyu7.getXO("xxxooo"));
+    }
+
+    @Test
+    public void getXO2() {
+        assertEquals(true, Kyu7.getXO("xxxXooOo"));
+    }
+
+    @Test
+    public void getXO3() {
+        assertEquals(false, Kyu7.getXO("xxx23424esdsfvxXXOOooo"));
+    }
+
+    @Test
+    public void getXO4() {
+        assertEquals(false, Kyu7.getXO("xXxxoewrcoOoo"));
+    }
+
+    @Test
+    public void getXO5() {
+        assertEquals(false, Kyu7.getXO("XxxxooO"));
+    }
+
+    @Test
+    public void getXO6() {
+        assertEquals(true, Kyu7.getXO("zssddd"));
+    }
+
+    @Test
+    public void getXO7() {
+        assertEquals(false, Kyu7.getXO("Xxxxertr34"));
+    }
 
 }
