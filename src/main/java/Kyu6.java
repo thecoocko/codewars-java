@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Kyu6 {
     public static int findIt(int[] a) {
@@ -26,13 +28,40 @@ public class Kyu6 {
 //        // your code
 //        return -1;
 //    }
-public boolean check(String sentence){
-    ArrayList<Boolean> result = new ArrayList<Boolean>();
-    for (char i = 'a'; i <= 'z'; ++i) {
-        result.add(sentence.toLowerCase().contains(String.valueOf(i)));
-    }
+    public boolean check(String sentence){
+        ArrayList<Boolean> result = new ArrayList<>();
+        for (char i = 'a'; i <= 'z'; ++i) {
+            result.add(sentence.toLowerCase().contains(String.valueOf(i)));
+        }
 
-    return result.stream().allMatch(i->i==true? true: false);
-}
+        return result.stream().allMatch(i->i==true? true: false);
+    }
+    /**Given a variable n,
+
+     If n is an integer, Return a string with dash'-'marks before and after each odd integer, but do not begin or end the string with a dash mark. If n is negative, then the negative sign should be removed.
+
+     If n is not an integer, return an empty value.
+
+     Ex:
+
+     dashatize(274) -> '2-7-4'
+     dashatize(6815) -> '68-1-5'*/
+
+    public static String dashatize(int num) {
+        String doubleDash = ("-(?:-)");
+        String cleanStart = ("(^-)");
+        String cleanEnd = ("(-$)");
+        String result = "";
+
+        char [] charArray = String.valueOf(num).replaceAll(cleanStart,"").toCharArray();
+
+        for(Character ch : charArray){
+            if(Integer.parseInt(String.valueOf(ch))%2!=0) result+="-"+ch+"-";
+            else result+=ch;
+        }
+        return  result.replaceAll(doubleDash,"-")
+                .replaceAll(cleanStart,"")
+                .replaceAll(cleanEnd,"");
+    }
 
 }

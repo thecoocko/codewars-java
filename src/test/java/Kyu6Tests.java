@@ -31,4 +31,26 @@ public void pangram1() {
         Kyu6 pc = new Kyu6();
         assertEquals(false, pc.check(pangram2));
     }
+
+    @Test
+    public void dashatizeBasic() {
+        assertEquals("2-7-4", Kyu6.dashatize(274));
+        assertEquals("5-3-1-1", Kyu6.dashatize(5311));
+        assertEquals("86-3-20", Kyu6.dashatize(86320));
+        assertEquals("9-7-4-3-02", Kyu6.dashatize(974302));
+    }
+
+    @Test
+    public void dashatizeWeird() {
+        assertEquals("0", Kyu6.dashatize(0));
+        assertEquals("1", Kyu6.dashatize(-1));
+        assertEquals("28-3-6-9", Kyu6.dashatize(-28369));
+    }
+
+    @Test
+    public void dashatizeEdgeCases() {
+        assertEquals("2-1-4-7-48-3-64-7", Kyu6.dashatize(Integer.MAX_VALUE));
+        assertEquals("2-1-4-7-48-3-648", Kyu6.dashatize(Integer.MIN_VALUE));
+        assertEquals("1-1-1-1-1-1-1-1-1-1", Kyu6.dashatize(-1111111111));
+    }
 }

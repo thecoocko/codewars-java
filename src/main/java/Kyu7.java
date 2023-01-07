@@ -69,8 +69,34 @@ public class Kyu7 {
 
     public static boolean getXO (String str) {
         return str.toLowerCase().replace("o","").length() ==  str.toLowerCase().replace("x", "").length();
-
     }
 
+    public static int compute(int x, int y) {
+        return x==y? x: x> y ? compute(x-y,y):compute(x,y-x);
+    }
 
+    public static List<Object> filterList(final List<Object> list) {
+
+     return list.stream().filter(Integer.class::isInstance).collect(Collectors.toList());
+
+    }
+    public static boolean  isIsogram(String str) {
+        char [] chararray = str.toLowerCase().toCharArray();
+
+
+        return false;
+    }
+
+    public static long factorial(int n) {
+        return n==0? 1 : n*factorial(n-1);
+    }
+
+    public static int cubeOdd(int arr[]) {
+        int result = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i]%2!=0) result+= Math.pow(arr[i],3);
+        }
+
+        return result;
+    }
 }

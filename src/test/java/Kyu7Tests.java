@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertIterableEquals;
@@ -87,38 +88,57 @@ public class Kyu7Tests {
     }
 
     @Test
-    public void getXO1() {
+    public void getXO() {
         assertEquals(true, Kyu7.getXO("xxxooo"));
-    }
-
-    @Test
-    public void getXO2() {
         assertEquals(true, Kyu7.getXO("xxxXooOo"));
-    }
-
-    @Test
-    public void getXO3() {
         assertEquals(false, Kyu7.getXO("xxx23424esdsfvxXXOOooo"));
-    }
-
-    @Test
-    public void getXO4() {
         assertEquals(false, Kyu7.getXO("xXxxoewrcoOoo"));
-    }
-
-    @Test
-    public void getXO5() {
         assertEquals(false, Kyu7.getXO("XxxxooO"));
-    }
-
-    @Test
-    public void getXO6() {
         assertEquals(true, Kyu7.getXO("zssddd"));
-    }
-
-    @Test
-    public void getXO7() {
         assertEquals(false, Kyu7.getXO("Xxxxertr34"));
     }
 
+
+    @Test
+    public void testGcd() {
+
+        assertEquals(6, Kyu7.compute(30,12));
+        assertEquals(1, Kyu7.compute(8,9));
+        assertEquals(1, Kyu7.compute(1,1));
+    }
+
+    @Test
+    public void filterList() {
+        assertEquals(List.of(1, 2), Kyu7.filterList(List.of(1, 2, "a", "b")));
+        assertEquals(List.of(1, 0, 15), Kyu7.filterList(List.of(1, "a", "b", 0, 15)));
+        assertEquals(List.of(1, 2, 123), Kyu7.filterList(List.of(1, 2, "aasf", "1", "123", 123)));
+    }
+
+    @Test
+    public void isIsogram() {
+        assertEquals(true, Kyu7.isIsogram("Dermatoglyphics"));
+        assertEquals(true, Kyu7.isIsogram("isogram"));
+        assertEquals(false, Kyu7.isIsogram("moose"));
+        assertEquals(false, Kyu7.isIsogram("isIsogram"));
+        assertEquals(false, Kyu7.isIsogram("aba"));
+        assertEquals(false, Kyu7.isIsogram("moOse"));
+        assertEquals(true, Kyu7.isIsogram("thumbscrewjapingly"));
+        assertEquals(true, Kyu7.isIsogram(""));
+    }
+
+    @Test
+    public void factorial() {
+        assertEquals(1L, Kyu7.factorial(0));
+        assertEquals(1L, Kyu7.factorial(1));
+        assertEquals(24L, Kyu7.factorial(4));
+        assertEquals(5040L, Kyu7.factorial(7));
+    }
+
+    @Test
+    public void cubeOdd() {
+        assertEquals(0, Kyu7.cubeOdd(new int[] {-5, -5, 5, 5}));
+        assertEquals(28, Kyu7.cubeOdd(new int[] {1, 2, 3, 4}));
+        assertEquals(0, Kyu7.cubeOdd(new int[] {-3, -2, 2, 3}));
+
+    }
 }
