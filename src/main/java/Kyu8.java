@@ -129,6 +129,12 @@ public class Kyu8 {
 
         return reversed;
     }
+    public  int stringToNumber(String str) {
+        return Integer.parseInt(str);
+    }
 
+    public String removeExclamationMarks(String s) {
+        return s.replaceAll("!","");
+    }
 
 }

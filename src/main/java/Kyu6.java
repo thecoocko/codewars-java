@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -64,4 +66,33 @@ public class Kyu6 {
                 .replaceAll(cleanEnd,"");
     }
 
+//    public static String longestConsec(String[] strarr, int k) {
+//        // your code
+//    }
+
+//"[:;][-~]?[)D]"
+public static int countSmileys(List<String> arr) {
+    int count = 0;
+    Pattern pattern = Pattern.compile("[:;][-~]?[)D]");
+    for (String i : arr) {
+        Matcher matcher = pattern.matcher(i);
+        if (matcher.matches()) count++;
+    }
+    return count;
+}
+
+/**1/2 (sqrt(1 - 8 sqrt(m)) - 1)*/
+    public static long findNb(long m) {
+        return (int)(Math.sqrt(2 * (Math.sqrt(1.0 * m))));
+
+    }
+    public static String high(String s) {
+        Map<String,Integer> scores = Map.ofEntries(Map.entry("a",1),Map.entry("b",2),Map.entry("c",3));
+
+        return "";
+    }
+
+    public static String camelCase(String input) {
+        return null;
+    }
 }

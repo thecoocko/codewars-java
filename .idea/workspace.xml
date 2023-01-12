@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a889289-5917-4d87-b606-9f5ea94ccd53" name="Changes" comment="kyu6">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Kyu4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Kyu5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Kyu4Tests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Kyu5Tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kyu5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kyu5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kyu6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kyu6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kyu7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kyu7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kyu8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kyu8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Kyu5Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Kyu5Tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Kyu6Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Kyu6Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Kyu7Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Kyu7Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,50 +53,48 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Kyu5Tests.aplhanumeric">
-    <configuration name="Kyu4Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Kyu6Tests">
+    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Run" />
       <module name="codewars-java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Kyu4Tests" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Kyu4Tests.fixedTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Kyu5Tests.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars-java" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Kyu4Tests" />
-      <option name="METHOD_NAME" value="fixedTests" />
+      <option name="MAIN_CLASS_NAME" value="Kyu5Tests" />
+      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Kyu5Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Kyu6Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars-java" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Kyu5Tests" />
+      <option name="MAIN_CLASS_NAME" value="Kyu6Tests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Kyu5Tests.aplhanumeric" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Kyu6Tests.findNb1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars-java" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Kyu5Tests" />
-      <option name="METHOD_NAME" value="aplhanumeric" />
+      <option name="MAIN_CLASS_NAME" value="Kyu6Tests" />
+      <option name="METHOD_NAME" value="findNb1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Kyu5Tests.aplhanumeric" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Kyu6Tests.findNb2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars-java" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Kyu5Tests" />
-      <option name="METHOD_NAME" value="aplhanumeric" />
+      <option name="MAIN_CLASS_NAME" value="Kyu6Tests" />
+      <option name="METHOD_NAME" value="findNb2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Kyu5Tests.aplhanumeric" />
-        <item itemvalue="JUnit.Kyu5Tests.aplhanumeric" />
-        <item itemvalue="JUnit.Kyu5Tests" />
-        <item itemvalue="JUnit.Kyu4Tests.fixedTests" />
-        <item itemvalue="JUnit.Kyu4Tests" />
+        <item itemvalue="JUnit.Kyu6Tests" />
+        <item itemvalue="JUnit.Kyu6Tests.findNb2" />
+        <item itemvalue="JUnit.Kyu6Tests.findNb1" />
+        <item itemvalue="Application.Run" />
+        <item itemvalue="JUnit.Kyu5Tests.test5" />
       </list>
     </recent_temporary>
   </component>

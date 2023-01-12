@@ -81,10 +81,19 @@ public class Kyu7 {
 
     }
     public static boolean  isIsogram(String str) {
-        char [] chararray = str.toLowerCase().toCharArray();
+//        if(str==null) return false;
+//        str= str.toLowerCase();
+//        char [] chararray=str.toCharArray();
+//        for(char ch:chararray){
+//            System.out.println(ch+"\t");
+//            if(str.indexOf(ch)!=str.lastIndexOf(ch)){
+//                return false;
+//            }
+//        }
+//        return true;
 
+        return str.length() == str.toLowerCase().chars().distinct().count();
 
-        return false;
     }
 
     public static long factorial(int n) {

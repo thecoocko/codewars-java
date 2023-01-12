@@ -1,5 +1,8 @@
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 
 public class Kyu6Tests {
@@ -52,5 +55,87 @@ public void pangram1() {
         assertEquals("2-1-4-7-48-3-64-7", Kyu6.dashatize(Integer.MAX_VALUE));
         assertEquals("2-1-4-7-48-3-648", Kyu6.dashatize(Integer.MIN_VALUE));
         assertEquals("1-1-1-1-1-1-1-1-1-1", Kyu6.dashatize(-1111111111));
+    }
+    private static void testing(String actual, String expected) {
+        assertEquals(expected, actual);
+    }
+//    @Test
+//    public void test() {
+//        System.out.println("longestConsec Fixed Tests");
+//        testing(Kyu6.longestConsec(new String[] {"zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"}, 2), "abigailtheta");
+//        testing(Kyu6.longestConsec(new String[] {"ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx", "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh"}, 1), "oocccffuucccjjjkkkjyyyeehh");
+//        testing(Kyu6.longestConsec(new String[] {}, 3), "");
+//        testing(Kyu6.longestConsec(new String[] {"itvayloxrp","wkppqsztdkmvcuwvereiupccauycnjutlv","vweqilsfytihvrzlaodfixoyxvyuyvgpck"}, 2), "wkppqsztdkmvcuwvereiupccauycnjutlvvweqilsfytihvrzlaodfixoyxvyuyvgpck");
+//        testing(Kyu6.longestConsec(new String[] {"wlwsasphmxx","owiaxujylentrklctozmymu","wpgozvxxiu"}, 2), "wlwsasphmxxowiaxujylentrklctozmymu");
+//        testing(Kyu6.longestConsec(new String[] {"zone", "abigail", "theta", "form", "libe", "zas"}, -2), "");
+//        testing(Kyu6.longestConsec(new String[] {"it","wkppv","ixoyx", "3452", "zzzzzzzzzzzz"}, 3), "ixoyx3452zzzzzzzzzzzz");
+//        testing(Kyu6.longestConsec(new String[] {"it","wkppv","ixoyx", "3452", "zzzzzzzzzzzz"}, 15), "");
+//        testing(Kyu6.longestConsec(new String[] {"it","wkppv","ixoyx", "3452", "zzzzzzzzzzzz"}, 0), "");
+//    }
+@Test
+public void countSmileys1() {
+    List<String> a = new ArrayList<String>();
+    a.add(":)"); a.add(":D"); a.add(":-}"); a.add(":-()");
+    assertEquals(2, Kyu6.countSmileys(a));
+}
+
+    @Test
+    public void countSmileys2() {
+        List<String> a = new ArrayList<String>();
+        a.add(":)"); a.add("XD"); a.add(":0}"); a.add("x:-"); a.add("):-"); a.add("D:");
+        assertEquals(1, Kyu6.countSmileys(a));
+    }
+
+    @Test
+    public void countSmileys3() {
+        List<String> a =  new ArrayList<String>();
+        a.add(":)"); a.add(":D"); a.add("X-}"); a.add("xo)"); a.add(":X"); a.add(":-3"); a.add(":3");
+        assertEquals(2, Kyu6.countSmileys(a));
+    }
+
+    @Test
+    public void countSmileys4() {
+        List<String> a =  new ArrayList<String>();
+        a.add(":)"); a.add(";)D"); a.add("x-]"); a.add(":ox"); a.add(";-("); a.add(";-)"); a.add(";~("); a.add(":~D");
+        assertEquals(3, Kyu6.countSmileys(a));
+    }
+    @Test
+    public void findNb1() {
+        assertEquals(2022, Kyu6.findNb(4183059834009L));
+    }
+    @Test
+    public void findNb2() {
+        assertEquals(-1, Kyu6.findNb(24723578342962L));
+    }
+    @Test
+    public void findNb3() {
+        assertEquals(4824, Kyu6.findNb(135440716410000L));
+    }
+    @Test
+    public void findNb4() {
+        assertEquals(3568, Kyu6.findNb(40539911473216L));
+    }
+
+    @Test
+    public void sampleTests() {
+        assertEquals("taxi", Kyu6.high("man i need a taxi up to ubud"));
+        assertEquals("volcano", Kyu6.high("what time are we climbing up to the volcano"));
+        assertEquals("semynak", Kyu6.high("take me to semynak"));
+    }
+
+    @Test
+    public void edgeCaseTests() {
+        assertEquals("aa", Kyu6.high("aa b"));
+        assertEquals("b", Kyu6.high("b aa"));
+        assertEquals("bb", Kyu6.high("bb d"));
+        assertEquals("d", Kyu6.high("d bb"));
+        assertEquals("aaa", Kyu6.high("aaa b"));
+    }
+
+    @Test
+    public void camelCase() {
+        assertEquals( "Incorrect", "camel Casing", Kyu6.camelCase("camelCasing"));
+        assertEquals( "Incorrect", "camel Casing Test", Kyu6.camelCase("camelCasingTest"));
+        assertEquals( "Incorrect", "camelcasingtest", Kyu6.camelCase("camelcasingtest"));
     }
 }

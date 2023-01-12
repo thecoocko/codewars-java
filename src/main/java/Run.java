@@ -14,9 +14,7 @@ public class Run {
     }
 
     public static void main(String[] args) {
-        LocalDate d1 = LocalDate.of(2020, Month.JUNE,20);
-        LocalDate d2 = LocalDate.of(2020, Month.JUNE,21);
-        System.out.println(Duration.between(d1,d2));
+
         List<Integer> list= new LinkedList<>();
     list.add(12);
     list.add(2);
@@ -37,6 +35,15 @@ public class Run {
         //end of test task
 
         Kyu8 kyu8 = new Kyu8();
+
+        System.out.println("---Kata 17---");
+        System.out.println(kyu8.removeExclamationMarks("Hello World!"));
+
+        System.out.println("---Kata 16---");
+        System.out.println(kyu8.stringToNumber("1234"));
+        System.out.println(kyu8.stringToNumber("605"));
+        System.out.println(kyu8.stringToNumber("1405"));
+        System.out.println(kyu8.stringToNumber("-7"));
 
         System.out.println("---Kata 15---");
         System.out.println(kyu8.reverse(5));
