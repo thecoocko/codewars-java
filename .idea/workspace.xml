@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1a889289-5917-4d87-b606-9f5ea94ccd53" name="Changes" comment="kyu6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kyu5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kyu5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kyu6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kyu6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kyu7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kyu7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kyu8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kyu8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Kyu5Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Kyu5Tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Kyu6Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Kyu6Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Kyu7Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Kyu7Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,35 +36,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projects/codewars-java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/projects/codewars-java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Kyu6Tests">
-    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Run" />
+  <component name="RunManager" selected="Application.Kyu7">
+    <configuration name="Kyu7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Kyu7" />
       <module name="codewars-java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Kyu5Tests.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codewars-java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Kyu5Tests" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,16 +64,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Kyu6Tests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Kyu6Tests.findNb1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codewars-java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Kyu6Tests" />
-      <option name="METHOD_NAME" value="findNb1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,13 +78,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Kyu6Tests.sampleTestCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codewars-java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Kyu6Tests" />
+      <option name="METHOD_NAME" value="sampleTestCases" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Kyu7Tests.sampleTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codewars-java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Kyu7Tests" />
+      <option name="METHOD_NAME" value="sampleTests(java.lang.String,int,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Kyu7" />
+        <item itemvalue="JUnit.Kyu7Tests.sampleTests" />
+        <item itemvalue="JUnit.Kyu6Tests.sampleTestCases" />
         <item itemvalue="JUnit.Kyu6Tests" />
         <item itemvalue="JUnit.Kyu6Tests.findNb2" />
-        <item itemvalue="JUnit.Kyu6Tests.findNb1" />
-        <item itemvalue="Application.Run" />
-        <item itemvalue="JUnit.Kyu5Tests.test5" />
       </list>
     </recent_temporary>
   </component>

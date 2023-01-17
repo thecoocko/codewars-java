@@ -138,4 +138,47 @@ public void countSmileys1() {
         assertEquals( "Incorrect", "camel Casing Test", Kyu6.camelCase("camelCasingTest"));
         assertEquals( "Incorrect", "camelcasingtest", Kyu6.camelCase("camelcasingtest"));
     }
+
+    private double precision = 0.0000000000001;
+
+    @Test
+    public void findUniq() {
+        assertEquals(1.0, Kyu6.findUniq(new double[]{0, 1, 0}), precision);
+        assertEquals(2.0, Kyu6.findUniq(new double[]{1, 1, 1, 2, 1, 1}), precision);
+        assertEquals(4.0, Kyu6.findUniq(new double[]{1, 1, 4, 1,3, 1,3, 1}), precision);
+    }
+
+    @Test
+    public void testEncrypt() {
+        // assertEquals("expected", "actual");
+        assertEquals("This is a test!", Kyu6.encrypt("This is a test!", 0));
+        assertEquals("hsi  etTi sats!", Kyu6.encrypt("This is a test!", 1));
+        assertEquals("s eT ashi tist!", Kyu6.encrypt("This is a test!", 2));
+        assertEquals(" Tah itse sits!", Kyu6.encrypt("This is a test!", 3));
+        assertEquals("This is a test!", Kyu6.encrypt("This is a test!", 4));
+        assertEquals("This is a test!", Kyu6.encrypt("This is a test!", -1));
+        assertEquals("hskt svr neetn!Ti aai eyitrsig", Kyu6.encrypt("This kata is very interesting!", 1));
+    }
+
+    @Test
+    public void testDecrypt() {
+        // assertEquals("expected", "actual");
+        assertEquals("This is a test!", Kyu6.decrypt("This is a test!", 0));
+        assertEquals("This is a test!", Kyu6.decrypt("hsi  etTi sats!", 1));
+        assertEquals("This is a test!", Kyu6.decrypt("s eT ashi tist!", 2));
+        assertEquals("This is a test!", Kyu6.decrypt(" Tah itse sits!", 3));
+        assertEquals("This is a test!", Kyu6.decrypt("This is a test!", 4));
+        assertEquals("This is a test!", Kyu6.decrypt("This is a test!", -1));
+        assertEquals("This kata is very interesting!", Kyu6.decrypt("hskt svr neetn!Ti aai eyitrsig", 1));
+    }
+
+    @Test
+    public void testNullOrEmpty() {
+        // assertEquals("expected", "actual");
+        assertEquals("", Kyu6.encrypt("", 0));
+        assertEquals("", Kyu6.decrypt("", 0));
+        assertEquals(null, Kyu6.encrypt(null, 0));
+        assertEquals(null, Kyu6.decrypt(null, 0));
+    }
+
 }
