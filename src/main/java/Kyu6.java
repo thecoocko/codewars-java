@@ -2,6 +2,7 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Kyu6 {
     public static int findIt(int[] a) {
@@ -121,13 +122,34 @@ public class Kyu6 {
      encrypt("01234", 3)  =>  "13024"  ->  "32104"  ->  "20314"*/
 
     public static String encrypt(final String text, final int n) {
-        // Your code here
-        return null;
+
+        ArrayList<String> odd = new ArrayList<>();
+        ArrayList<String> even = new ArrayList<>();
+
+        for(int i =0 ; i<text.length();i++){
+                if(i%2==0) even.add(text.split("")[i]);
+                else  odd.add(text.split("")[i]);
+        }
+
+        return n<=0?text:encrypt(String.join("",even).concat(String.join("",odd)),n-1);
     }
 
     public static String decrypt(final String encryptedText, final int n) {
-        // Your code here
-        return null;
+        if(encryptedText == null || "".equals(encryptedText) || n <= 0)
+            return encryptedText;
+        else{
+            int len = encryptedText.length();
+            int mid = (int) Math.floor(len/2);
+            String result = "";
+            for(int i=0,j=mid; i<mid; i++,j++){
+                result += encryptedText.charAt(j)+"";
+                result += encryptedText.charAt(i)+"";
+            }
+            if(len % 2 != 0) result += encryptedText.charAt(len -1)+"";
+
+            return (n > 1) ? decrypt(result, n-1) : result;
+        }
+
     }
 }
 
