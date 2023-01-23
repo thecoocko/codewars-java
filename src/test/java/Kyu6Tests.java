@@ -181,4 +181,13 @@ public void countSmileys1() {
         assertEquals(null, Kyu6.decrypt(null, 0));
     }
 
+    @Test
+    public void BasicTests() {
+        System.out.println("****** Basic Tests ******");
+        assertEquals(3, Kyu6.persistence(39));
+        assertEquals(0, Kyu6.persistence(4));
+        assertEquals(2, Kyu6.persistence(25));
+        assertEquals(4, Kyu6.persistence(999));
+    }
+
 }

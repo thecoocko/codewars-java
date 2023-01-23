@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a889289-5917-4d87-b606-9f5ea94ccd53" name="Changes" comment="kyu6">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Kyu8Tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kyu6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kyu6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kyu8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kyu8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Kyu6Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Kyu6Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,29 +50,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Kyu6Tests.testDecrypt">
-    <configuration name="Kyu7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Kyu7" />
-      <module name="codewars-java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Kyu6Tests.testDecrypt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Kyu8Tests.test1">
+    <configuration name="Kyu6Tests.BasicTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars-java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Kyu6Tests" />
-      <option name="METHOD_NAME" value="testDecrypt" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Kyu6Tests.testEncrypt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codewars-java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Kyu6Tests" />
-      <option name="METHOD_NAME" value="testEncrypt" />
+      <option name="METHOD_NAME" value="BasicTests" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,11 +71,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Kyu7Tests.sampleTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Kyu8Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars-java" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Kyu7Tests" />
-      <option name="METHOD_NAME" value="sampleTests(java.lang.String,int,int)" />
+      <option name="MAIN_CLASS_NAME" value="Kyu8Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Kyu8Tests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codewars-java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Kyu8Tests" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Kyu8Tests.testFixed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codewars-java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Kyu8Tests" />
+      <option name="METHOD_NAME" value="testFixed" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Kyu6Tests.testDecrypt" />
-        <item itemvalue="JUnit.Kyu6Tests.testEncrypt" />
+        <item itemvalue="JUnit.Kyu8Tests.test1" />
+        <item itemvalue="JUnit.Kyu8Tests.testFixed" />
+        <item itemvalue="JUnit.Kyu8Tests" />
+        <item itemvalue="JUnit.Kyu6Tests.BasicTests" />
         <item itemvalue="JUnit.Kyu6Tests.testNullOrEmpty" />
-        <item itemvalue="Application.Kyu7" />
-        <item itemvalue="JUnit.Kyu7Tests.sampleTests" />
       </list>
     </recent_temporary>
   </component>

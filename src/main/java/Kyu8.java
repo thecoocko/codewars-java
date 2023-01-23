@@ -136,5 +136,21 @@ public class Kyu8 {
     public String removeExclamationMarks(String s) {
         return s.replaceAll("!","");
     }
+    public static int goals(int ...array) {
+        return Arrays.stream(array).sum();
+    }
+    public static String twoSort(String[] s) {
+        Object[] sor = Arrays.stream(s).sorted().toArray();
 
+        return String.join("***",sor[0].toString().split(""));
+    }
+
+    public static String howMuchILoveYou(int nb_petals) {
+        String [] prediction = {"","I love you","a little","a lot","passionately","madly","not at all"};
+
+        int i =1;
+        while (i!=nb_petals){
+        }
+        return "";
+    }
 }
